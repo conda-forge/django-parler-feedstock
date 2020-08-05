@@ -1,5 +1,5 @@
 {% set name = "django-parler" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f633522c06727852978cf2f92c94a98d900dff47235412e64ed46d63e68b1f09
+  sha256: b634db2c63d1a62ed18b7fc40247a2833f1bbfd1f197ff3bdfaf004011669082
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Simple Django model translations without nasty hacks.'
+  summary: Simple Django model translations without nasty hacks.
 
   description: |
     Features:
@@ -44,7 +44,7 @@ about:
         - No ORM query hacks.
         - Easy to combine with custom Manager or QuerySet classes.
         - Easy to construct the translations model manually when needed.
-  
+
   doc_url: https://django-parler.readthedocs.io/
   dev_url: https://github.com/edoburu/django-parler/
 
