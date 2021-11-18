@@ -1,5 +1,5 @@
 {% set name = "django-parler" %}
-{% set version = "2.2.1" %}
+{% set version = "2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2273ac6c76c30f6e700070119d76f557d8e2778905aa71b3de7a51b406a8a5a1
+  sha256: 2c8f5012ceb5e49af93b16ea3fe4d0c83d70b91b2d0f470c05d7d742b6f3083d
 
 build:
   noarch: python
